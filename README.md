@@ -7,8 +7,11 @@ En esta lista estan los comandos mas confusos, hay muchos sitios donde se puede 
 
 Modo de cliente y servidor:
 > AT+CWMODE=3
+
 1 = Modo estación (Cliente) - Station mode (client)
+
 2 = Punto de acceso (Servidor) - AP mode (host)
+
 3 = Punto de acceso (servidor) + Modo estación (Cliente) - AP + Station mode (Yes, ESP8266 has a dual mode!)
 
 Cambia el nombre a la red des dispositivo estando en modo 3
