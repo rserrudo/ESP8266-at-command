@@ -18,14 +18,23 @@ Cambia el nombre a la red des dispositivo estando en modo 3
 > AT+CWSAP="nombreRed","contraseñaRed",Canal,3
 
 AT+CWSAP=ssid,pwd,ch,ecn
+
 ssid: String, ESP8266’s softAP SSID
+
 pwd: String, Password, no longer than 64 characters
+
 ch: channel id
+
 ecn:
+
 0 = OPEN
+
 2 = WPA_PSK
+
 3 = WPA2_PSK
+
 4 = WPA_WPA2_PSK
+
 
 Establece IP estatica - Solo fireware versión 0.9.5:
 > AT+CIPSTA="192.168.100.5"
