@@ -7,22 +7,22 @@ En esta lista estan los comandos mas confusos, hay muchos sitios donde se puede 
 
 Modo de cliente y servidor:
 > AT+CWMODE=3
-    1 = Modo estación (Cliente) - Station mode (client)
-    2 = Punto de acceso (Servidor) - AP mode (host)
-    3 = Punto de acceso (servidor) + Modo estación (Cliente) - AP + Station mode (Yes, ESP8266 has a dual mode!)
+1 = Modo estación (Cliente) - Station mode (client)
+2 = Punto de acceso (Servidor) - AP mode (host)
+3 = Punto de acceso (servidor) + Modo estación (Cliente) - AP + Station mode (Yes, ESP8266 has a dual mode!)
 
 Cambia el nombre a la red des dispositivo estando en modo 3
 > AT+CWSAP="nombreRed","contraseñaRed",Canal,3
 
-  AT+CWSAP=ssid,pwd,ch,ecn
-    ssid: String, ESP8266’s softAP SSID
-    pwd: String, Password, no longer than 64 characters
-    ch: channel id
-    ecn:
-      0 = OPEN
-      2 = WPA_PSK
-      3 = WPA2_PSK
-      4 = WPA_WPA2_PSK
+AT+CWSAP=ssid,pwd,ch,ecn
+ssid: String, ESP8266’s softAP SSID
+pwd: String, Password, no longer than 64 characters
+ch: channel id
+ecn:
+0 = OPEN
+2 = WPA_PSK
+3 = WPA2_PSK
+4 = WPA_WPA2_PSK
 
 Establece IP estatica - Solo fireware versión 0.9.5:
 > AT+CIPSTA="192.168.100.5"
